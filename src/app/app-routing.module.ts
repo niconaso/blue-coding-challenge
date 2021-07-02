@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'history',
     loadChildren: () => import('./pages/history/history.module').then( m => m.HistoryPageModule)
   },
+  {
+    path: 'fullscreen-image',
+    loadChildren: () => import('./pages/fullscreen-image/fullscreen-image.module').then( m => m.FullscreenImagePageModule)
+  },
 ];
 
 @NgModule({
